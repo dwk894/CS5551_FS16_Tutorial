@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<title>Login Page (Dayu Wang - 59)</title>
+	<style>
+		body {
+			background-color: beige;
+		}
+		#classTitle {
+			font-family: "Trebuchet MS", sans-serif;
+			font-size: 18px;
+			text-align: center;
+		}
+		#assignmentTitle {
+			font-family: "Trebuchet MS", sans-serif;
+			font-size: 24px;
+			text-align: center;
+			text-decoration: underline;
+		}
+		#studentName {
+			font-family: "Trebuchet MS", sans-serif;
+			font-size: 18px;
+			text-align: center;
+		}
+		#pageTitle {
+			font-family: "Trebuchet MS", sans-serif;
+			font-size: 21px;
+			text-align: center;
+			color: brown;
+		}
+		.button {
+			display: inline-block;
+			font-family: "Trebuchet MS", sans-serif;
+			font-size: 16px;
+			background-color: coral;
+			border-radius: 12px;
+			border: none;
+			text-align: center;
+			width: 200px;
+			padding: 9px 10px;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+		.button span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+		.button span:after {
+			content: '>>';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+		.button:hover span {
+			padding-right: 25px;
+		}
+		.button:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+		.button2 {
+			display: inline-block;
+			font-family: "Trebuchet MS", sans-serif;
+			font-size: 16px;
+			background-color: coral;
+			border-radius: 12px;
+			border: none;
+			text-align: center;
+			width: 200px;
+			padding: 9px 10px;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+		.button2 span {
+			cursor: pointer;
+			display: inline-block;
+			position: relative;
+			transition: 0.5s;
+		}
+		.button2 span:after {
+			content: '>>';
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: -20px;
+			transition: 0.5s;
+		}
+		.button2:hover span {
+			padding-right: 25px;
+		}
+		.button2:hover span:after {
+			opacity: 1;
+			right: 0;
+		}
+	</style>
+	
+	<body>
+		<p id = "classTitle">COMP-SCI 5551 (FS16) - Advanced Software Engineering</p>
+		<h1 id = "assignmentTitle">Tutorial 2 - Assignment (Web Application)</h1>
+		<p id = "studentName"><i>Dayu Wang (59)</i></p>
+		<br>
+		<p id = "pageTitle">Login Page</p>
+		
+		<p id = "buttons", align = "center"><br><button class = "button"><span><a href="Register.html">Register</a></button><button class = "button button2" style = "margin: 0px 0px 0px 16px;"><span><a href="Home.html">Login</a></span></button></p>
+	
+	</body>
+
+</html>
