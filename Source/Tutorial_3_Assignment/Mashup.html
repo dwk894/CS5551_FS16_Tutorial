@@ -3,12 +3,45 @@
 		<title>Mashup Web Application - Dayu Wang (59)</title>
 		<link rel = "stylesheet" type = "text/css" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<style type = "text/css">
-			#sq,#lg-sq,#thumb,#small,#mid,#ori {
+			body {
+				background-color: beige;
+			}
+			#classTitle {
+				font-family: "Trebuchet MS", sans-serif;
+				font-size: 18px;
+				text-align: center;
+			}
+			#assignmentTitle {
+				font-family: "Trebuchet MS", sans-serif;
+				font-size: 24px;
+				text-align: center;
+				text-decoration: underline;
+			}
+			#studentName {
+				font-family: "Trebuchet MS", sans-serif;
+				font-size: 18px;
+				text-align: center;
+			}
+			#pageTitle {
+				font-family: "Trebuchet MS", sans-serif;
+				font-size: 21px;
+				text-align: center;
+				color: brown;
+			}
+			#step1, #step2, #pHead, #tHead {
+				font-family: "Trebuchet MS", sans-serif;
+				font-size: 18px;
+				text-align: left;
+				color: brown;
+			}
+			#sq, #lg-sq, #thumb, #small, #mid, #ori {
 				width: 100%;
 			}
-			table {
+			#resultTable {
+				font-family: "Trebuchet MS", sans-serif;
+				font-size: 18px;
 				width: 100%;
-				vertical-align: top;
+				text-align: left;
 			}
 			body {
 				background-color: beige;
@@ -105,6 +138,8 @@
 		function() {
 		  $('#button').click(
 			function() {
+			  $("#pictureHead").append('<p id = "pHead"><br><strong>Result Pictures From Flickr</strong><br><br></p>');
+			  $("#tagHead").append('<p id = "tHead"><br><strong>Picture Topics from Alchemy</strong><br><br></p>')
 			  $.getJSON(apiurl,
 			    function(json) {
 				  $.each(json.photos.photo,
@@ -142,15 +177,22 @@
     </script>
   </head>
   <body>
+	
+	<p id = "classTitle">COMP-SCI 5551 (FS16) - Advanced Software Engineering</p>
+	<h1 id = "assignmentTitle">Tutorial 3 - Assignment (Social Login and Mashup Application)</h1>
+	<p id = "studentName"><i>Dayu Wang (59)</i></p>
+	<br>
+	<p id = "pageTitle">Mashup Web Application</p>
+	  
     <div class = "container">
       <div class = "row">
         <div class = "col-md-12">
-          <h2>Select size of photos (in pixels) you want them to be displayed</h2>
+          <h2 id = "step1"><br>Step 1: Please choose a size for the pictures.<br><br></h2>
         </div>
       </div>
       <div class = "row">
         <div class = "col-md-2">
-          <button type = "button" class = "btn btn-primary" id = "sq">Square [75X75]</button>
+          <button type = "button" class = "btn btn-primary" id = "sq">Square</button>
         </div>
         <div class = "col-md-2">
           <button type = "button" class = "btn btn-primary" id = "lg-sq">Large Square</button>
@@ -170,20 +212,28 @@
       </div>
       <div class = "row">
         <div class = "col-md-12">
-          <h2>Hit This button to fetch photos</h2>
-          <button type = "button" class = "btn btn-success" id = "button">Fetch Recent Photos</button>
-          <button type = "button" class = "btn btn-alert" id = "reset">Reset</button>
+          <h2 id = "step2"><br><br>Step 2: Load Flickr recent pictures.<br><br></h2>
+          <button type = "button" class = "btn btn-success" id = "button">Flickr Recent Pictures</button>
+          <button type = "button" class = "btn btn-alert" id = "reset">Start Over</button>
           <hr>
         </div>
       </div>
       <div class = "row">
         <div class = "col-md-12">
-		  <table>
+		  <table id = "resultTable">
 			<tr>
 			  <td>
-          		<div id = "results"></div>
+				<div id = "pictureHead"></div>
 			  </td>
 			  <td>
+				<div id = "tagHead"></div>
+			  </td>
+			</tr>
+			<tr>
+			  <td valign = "top">
+          		<div id = "results"></div>
+			  </td>
+			  <td valign = "top">
 				<div id = "tags"></div>
 			  </td>
 			</tr>
