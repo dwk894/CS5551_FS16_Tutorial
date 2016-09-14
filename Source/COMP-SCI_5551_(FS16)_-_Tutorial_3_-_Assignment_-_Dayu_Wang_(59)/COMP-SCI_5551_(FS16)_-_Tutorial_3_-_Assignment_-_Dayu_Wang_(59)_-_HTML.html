@@ -1,10 +1,16 @@
 <html>
 	<head>
-		<title>Mashup Web Application - Dayu Wang (59)</title>
+		<title>Mashup Web Application with Google Login- Dayu Wang (59)</title>
 		<link rel = "stylesheet" type = "text/css" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<style type = "text/css">
 			body {
 				background-color: beige;
+			}
+			#note {
+				font-family: "Trebuchet MS", sans-serif;
+				font-size: 18px;
+				text-align: center;
+				color: crimson;
 			}
 			#classTitle {
 				font-family: "Trebuchet MS", sans-serif;
@@ -46,9 +52,37 @@
 			body {
 				background-color: beige;
 			}
+			.profile {
+				border: 3px solid #B7B7B7;
+				padding: 10px;
+				margin-top: 10px;
+				width: 350px;
+				background-color: #F7F7F7;
+				height: 160px;
+			}
+			.profile p {
+				margin: 0px 0px 10px 0px;
+			}
+			.head {
+				margin-bottom: 10px;
+			}
+			.head a {
+				float: right;
+			}
+			.profile img {
+				width: 100px;
+				float: left;
+				margin: 0px 10px 10px 0px;
+			}
+			.proDetails {
+				float: left;
+			}
 		</style>
     <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src = "http://masonry.desandro.com/masonry.pkgd.min.js"></script>
+	<meta name = "google-signin-client_id" content = "104869834685-fc08uh26rqt2utooq1l3vi587llcc05c.apps.googleusercontent.com">
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src = "https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
     <script>
       var apiurl, myresult, apiurl_size, selected_size;
       apiurl = "https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=bd5aab124fd7b84656a32cc5b35f98e9&per_page=10&format=json&nojsoncallback=1";
@@ -174,6 +208,41 @@
                           	);
 		}
 	  );
+	  function onSuccess(googleUser) {
+				var profile = googleUser.getBasicProfile();
+				gapi.client.load('plus', 'v1', function () {
+					var request = gapi.client.plus.people.get({
+						'userId': 'me'
+					});
+					request.execute(function (resp) {
+						var profileHTML = '<div class="profile"><div class="head">Welcome '+resp.name.givenName+'! <a href="javascript:void(0);" onclick="signOut();">Sign out</a></div>';
+						profileHTML += '<img src="'+resp.image.url+'"/><div class="proDetails"><p>'+resp.displayName+'</p><p>'+resp.emails[0].value+'</p><p>'+resp.gender+'</p><p>'+resp.id+'</p><p><a href="'+resp.url+'">View Google+ Profile</a></p></div></div>';
+						$('.userContent').html(profileHTML);
+						$('#gSignIn').slideUp('slow');
+					});
+				});
+			}
+			function onFailure(error) {
+				alert(error);
+			}
+			function renderButton() {
+				gapi.signin2.render('gSignIn', {
+					'scope': 'profile email',
+					'width': 240,
+					'height': 50,
+					'longtitle': true,
+					'theme': 'dark',
+					'onsuccess': onSuccess,
+					'onfailure': onFailure
+				});
+			}
+			function signOut() {
+				var auth2 = gapi.auth2.getAuthInstance();
+				auth2.signOut().then(function () {
+					$('.userContent').html('');
+					$('#gSignIn').slideDown('slow');
+				});
+			}
     </script>
   </head>
   <body>
@@ -182,8 +251,10 @@
 	<h1 id = "assignmentTitle">Tutorial 3 - Assignment (Social Login and Mashup Application)</h1>
 	<p id = "studentName"><i>Dayu Wang (59)</i></p>
 	<br>
-	<p id = "pageTitle">Mashup Web Application</p>
-	  
+	<p id = "pageTitle">Mashup Web Application with Google Login</p>
+	  <p id = "note"><br><br>Note: Use <strong>http://localhost:3040/</strong> to run the page.<br><br><br></p>
+	<div id = "gSignIn" style = "width:240px;margin:0 auto;"></div>
+	<div class = "userContent" style = "width:360px;margin:0 auto;"></div>
     <div class = "container">
       <div class = "row">
         <div class = "col-md-12">
