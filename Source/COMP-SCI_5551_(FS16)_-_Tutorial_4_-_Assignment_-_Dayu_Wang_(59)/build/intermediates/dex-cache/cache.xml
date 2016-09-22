@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\TempSG\Tutorial_3_Source_Code\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="24f746b091e4e92f2d0d3783a918c873c5d8511e">
+        <dex dex="C:\TempSG\Tutorial_3_Source_Code\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_1148233390df56b5310e351e7c5fe6def744d6e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dwk89\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\TempSG\Tutorial_3_Source_Code\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-v4-18.0.0_76db5b078f495635b5c421ba28700ef8563e06d0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\TempSG\Tutorial_3_Source_Code\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="37a7da5db96cc8ef5388b1fe81b5c6c35bdde1f2">
+        <dex dex="C:\TempSG\Tutorial_3_Source_Code\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e7553ff9f38497cfc15c84ac6564eeb886e06dd0\classes.dex" />
+    </item>
+
+</items>

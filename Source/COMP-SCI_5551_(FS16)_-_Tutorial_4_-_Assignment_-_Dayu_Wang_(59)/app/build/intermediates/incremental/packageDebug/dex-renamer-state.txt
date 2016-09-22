@@ -1,0 +1,7 @@
+#Wed Sep 21 20:44:22 CDT 2016
+base.0=C\:\\TempSG\\Tutorial_3_Source_Code\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_1148233390df56b5310e351e7c5fe6def744d6e7
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\TempSG\\Tutorial_3_Source_Code\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e7553ff9f38497cfc15c84ac6564eeb886e06dd0\\classes.dex
+base.1=C\:\\TempSG\\Tutorial_3_Source_Code\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e7553ff9f38497cfc15c84ac6564eeb886e06dd0
+file.0=C\:\\TempSG\\Tutorial_3_Source_Code\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_1148233390df56b5310e351e7c5fe6def744d6e7\\classes.dex

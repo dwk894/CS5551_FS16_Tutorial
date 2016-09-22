@@ -1,0 +1,112 @@
+[
+    {
+        "outputFile": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 161,
+                    "endColumn": 57,
+                    "endOffset": 214
+                },
+                "from": {
+                    "file": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 219,
+                    "endColumn": 55,
+                    "endOffset": 270
+                },
+                "from": {
+                    "file": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 275,
+                    "endColumn": 52,
+                    "endOffset": 323
+                },
+                "from": {
+                    "file": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 328,
+                    "endColumn": 51,
+                    "endOffset": 375
+                },
+                "from": {
+                    "file": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 51,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 380,
+                    "endColumn": 47,
+                    "endOffset": 423
+                },
+                "from": {
+                    "file": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 428,
+                    "endColumn": 63,
+                    "endOffset": 487
+                },
+                "from": {
+                    "file": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 492,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 570
+                },
+                "from": {
+                    "file": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 575,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 642
+                },
+                "from": {
+                    "file": "C:\\TempSG\\Tutorial_3_Source_Code\\app\\src\\main\\res\\values\\styles.xml"
+                }
+            }
+        ]
+    }
+]
