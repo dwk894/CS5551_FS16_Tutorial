@@ -1,0 +1,88 @@
+body {
+	background-color: beige;
+}
+
+h1 {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 21px;
+	text-align: center;
+	text-decoration: underline;
+}
+
+#author {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: crimson;
+}
+
+#instruction, #welcome {
+	text-align: center;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 18px;
+}
+
+#userInput {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 18px;
+	color: crimson;
+}
+
+.button {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 18px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px auto;
+    cursor: pointer;
+	background-color: #555555;
+}
+
+.smallTitle {
+    font-family: "Trebuchet MS", sans-serif;
+	font-size: 18px;
+    text-decoration: underline;
+}
+
+.resultText {
+    font-family: "Trebuchet MS", sans-serif;
+	font-size: 15px;
+}
+
+#reminder {
+    font-family: "Trebuchet MS", sans-serif;
+	font-size: 12px;
+    text-align: center;
+	color: crimson;
+}
+
+img {
+	margin: 5px;
+    border: 1px solid #ccc;
+}
+
+#classTitle {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 15px;
+    text-align: center;
+	color: crimson;
+}
+
+#logOut {
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 15px;
+    border: none;
+    color: brown;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 0px auto;
+    cursor: pointer;
+	background-color: lightgreen;
+}
