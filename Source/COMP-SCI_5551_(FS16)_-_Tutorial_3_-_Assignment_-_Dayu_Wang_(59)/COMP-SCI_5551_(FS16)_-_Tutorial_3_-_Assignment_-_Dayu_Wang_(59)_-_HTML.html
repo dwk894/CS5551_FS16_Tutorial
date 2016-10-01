@@ -187,7 +187,7 @@
 								$("#results").append('<p><a href="' + myresult_size.url + '" target="_blank"><img src="' + myresult_size.source + '"/></a></p>');
 								$.getJSON('https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key=8c51475419e3809dbe98da396f76a1ce681b59ca&url='+myresult_size.source+'&version=2016-05-19',
 								  function(data) {
-									var c1 = data["images"][0]["classifiers"][0]["classes"];
+									var c1 = data["images"][0]["classifiers"][0]["classes"][0];
 									$.each(c1,
 									  function (i, v) {
 							  	     	$("#tags").append('<p>' + v.class + '</p>');
