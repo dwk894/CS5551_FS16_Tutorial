@@ -1,0 +1,6 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/TempSG/Lab_7/plugins/cordova-plugin-device/src/firefoxos/DeviceProxy.js",
+        "C:/TempSG/Lab_7/plugins/cordova-plugin-device/src/tizen/DeviceProxy.js"
+    ]
+}
